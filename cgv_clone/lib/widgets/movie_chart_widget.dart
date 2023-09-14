@@ -1,5 +1,6 @@
 import 'package:cgv_clone/models/moives.dart';
 import 'package:flutter/material.dart';
+import 'package:cgv_clone/screens/movie/detail_screen.dart';
 
 class MovieChartWidget extends StatelessWidget {
   const MovieChartWidget({
@@ -44,11 +45,17 @@ class MovieChartWidget extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               children: List.generate(
                 movieList.length,
-                (index) => buildRankPoster(movieList[index]),
-                // (index) => Padding(
-                //   padding: EdgeInsets.all(8.0),
-                //   child: Image.asset("${movieList[index].imageUrl}"),
-                // ),
+                (index) => GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              DetailScreen(thisMovie: movieList[index])),
+                    );
+                  },
+                  child: buildRankPoster(movieList[index]),
+                ),
               ),
             ),
           ),
@@ -82,7 +89,7 @@ Widget buildRankPoster(Movie movie) {
                 child: Image.asset(
                   movie.imageUrl,
                   fit: BoxFit.contain,
-                  width: 130.0,
+                  width: 150.0,
                 ),
               ),
               // 영화 순위

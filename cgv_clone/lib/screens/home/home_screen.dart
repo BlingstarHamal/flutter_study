@@ -3,7 +3,7 @@ import 'package:cgv_clone/widgets/image_slider_widget.dart';
 import 'package:cgv_clone/widgets/movie_chart_widget.dart';
 
 class MyHomPage extends StatelessWidget {
-  const MyHomPage({super.key});
+  const MyHomPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,9 @@ class MyHomPage extends StatelessWidget {
       "assets/images/banner_04.jpg",
     ];
 
+    // 상단 바
     return DefaultTabController(
+      // 탭바 컨트롤러
       length: menuItems.length,
       child: Scaffold(
         appBar: AppBar(
@@ -53,6 +55,8 @@ class MyHomPage extends StatelessWidget {
               color: Colors.red,
             ),
           ],
+
+          // 상단 바아래 메뉴탭
           bottom: PreferredSize(
             preferredSize: Size.fromHeight(40.0),
             child: Container(
@@ -74,12 +78,33 @@ class MyHomPage extends StatelessWidget {
             ),
           ),
         ),
+
+        // 중앙 화면
         body: TabBarView(
           children: [
             ListView(
               children: [
+                // 상단 배너
                 ImageSliderWidget(bannerUrlItems: bannerUrlItems),
+                // 무비차트
                 MovieChartWidget(),
+
+                // 하단바 -> 바텀네비를 사용해서 아래로 내리는 편이 나을것 같다.
+                Divider(
+                  thickness: 5.0,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      buildLabelIcon(Icons.phone_android, "MY CGV"),
+                      buildLabelIcon(Icons.photo, "포토플레이"),
+                      buildLabelIcon(Icons.account_balance_wallet, "할인정보"),
+                      buildLabelIcon(Icons.music_note, "CGV스토어"),
+                    ],
+                  ),
+                ),
               ],
             ),
             // Center(
@@ -103,6 +128,29 @@ class MyHomPage extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  Widget buildLabelIcon(IconData icon, String label) {
+    return Column(
+      children: [
+        Container(
+          width: 60,
+          height: 60,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(50),
+            color: Colors.black12,
+          ),
+          child: Icon(icon),
+        ),
+        SizedBox(
+          height: 5.0,
+        ),
+        Text(
+          label,
+          style: TextStyle(fontSize: 12.0),
+        ),
+      ],
     );
   }
 }
