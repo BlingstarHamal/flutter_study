@@ -116,7 +116,24 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     style: TextButton.styleFrom(
                       backgroundColor: Colors.red,
                     ),
-                    onPressed: () {},
+                    // 재출 버튼 누를 때 유효값 테스트
+                    onPressed: () {
+                      if (reviewIdController.text.isEmpty ||
+                          reviewTextController.text.isEmpty) {
+                        showDialog<String>(
+                          context: context,
+                          builder: (BuildContext context) => AlertDialog(
+                            content: Text('리뷰를 입력하세요.'),
+                            actions: <Widget>[
+                              TextButton(
+                                onPressed: () => Navigator.pop(context, 'OK'),
+                                child: const Text('OK'),
+                              ),
+                            ],
+                          ),
+                        );
+                      }
+                    },
                     child: Text(
                       '제출',
                       style: TextStyle(
