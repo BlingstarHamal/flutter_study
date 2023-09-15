@@ -14,3 +14,9 @@ void addReview(
     'registration_date': DateTime.now(),
   }).then((value) => print('review added'));
 }
+
+Stream<QuerySnapshot> getReviews(String moiveTitle) {
+  return reviewsCollection
+      .where('movie_title', isEqualTo: moiveTitle)
+      .snapshots();
+}

@@ -1,4 +1,6 @@
+import 'package:cgv_clone/database_service.dart';
 import 'package:cgv_clone/models/moives.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:cgv_clone/screens/movie/review_screen.dart';
 
@@ -114,6 +116,54 @@ class DetailScreen extends StatelessWidget {
                 );
               },
             ),
+          ),
+          // 리뷰 목록 만들기
+          StreamBuilder<QuerySnapshot>(
+            stream: getReviews(thisMovie.title),
+            builder:
+                (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
+              if (!snapshot.hasData) return const Text('Loading...');
+
+              return Column(
+                children: snapshot.data!.docs.map((DocumentSnapshot document) {
+                  // return Text('${document['name']} : ${document['comment']}');
+                  return ListTile(
+                    leading: CircleAvatar(
+                      backgroundColor: Colors.grey,
+                      child: Icon(
+                        Icons.person,
+                        color: Colors.black,
+                      ),
+                    ),
+                    title: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          document['evaluation'],
+                          style: TextStyle(color: Colors.brown),
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              document['name'],
+                              style: Theme.of(context).textTheme.titleLarge,
+                            ),
+                            Spacer(),
+                            Text(
+                              (document['registration_date'])
+                                  .toDate()
+                                  .toString(),
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    subtitle: Text(document['comment']),
+                  );
+                }).toList(),
+              );
+            },
           ),
         ],
       ),

@@ -40,7 +40,7 @@ class MovieChartWidget extends StatelessWidget {
           ),
           // 영화 포스터 영역
           Container(
-            height: 280.0,
+            height: 300.0,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: List.generate(

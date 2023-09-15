@@ -1,5 +1,6 @@
 import 'package:cgv_clone/models/moives.dart';
 import 'package:flutter/material.dart';
+import 'package:cgv_clone/database_service.dart';
 
 class ReviewScreen extends StatefulWidget {
   const ReviewScreen({super.key, required this.item});
@@ -133,6 +134,10 @@ class _ReviewScreenState extends State<ReviewScreen> {
                             ],
                           ),
                         );
+                      } else {
+                        addReview(thisMovie.title, reviewIdController.text,
+                            reviewTextController.text, choices[choice_index]);
+                        Navigator.pop(context);
                       }
                     },
                     child: Text(
