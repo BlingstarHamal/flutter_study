@@ -33,7 +33,7 @@ class MyHomPage extends StatelessWidget {
             "CGV",
             style: TextStyle(
               fontSize: 26.0,
-              color: Colors.red,
+              color: Colors.blue,
               fontWeight: FontWeight.bold,
             ),
           ),
