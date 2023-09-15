@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "25938226207",
+    "project_id": "cgv-clne",
+    "storage_bucket": "cgv-clne.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25938226207:android:00bb712e5aef00b6db792a",
+        "android_client_info": {
+          "package_name": "com.example.cgv_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLK4wH2qRLZ6apvGIa4FqfFex89bOBC9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

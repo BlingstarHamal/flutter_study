@@ -14,6 +14,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
   TextEditingController reviewTextController = new TextEditingController();
   List<String> choices = ['Good!', 'Bad.'];
   int choice_index = 0;
+
   @override
   Widget build(BuildContext context) {
     Movie thisMovie = widget.item;
