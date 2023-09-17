@@ -3,6 +3,7 @@ class Park {
   final String parking_code;
   final double lat; // 위도
   final double lng; // 경도
+
   Park(
       {required this.parking_name,
       required this.parking_code,
