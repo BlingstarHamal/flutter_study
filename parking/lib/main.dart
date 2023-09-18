@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'services/fetchpark.dart';
 import 'dart:async';
 import 'models/park.dart';
+import 'repositories/dbhelper.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,8 +18,22 @@ class _MyAppState extends State<MyApp> {
 
   @override
   void initState() {
+    // TODO: implement initSate
+
     super.initState();
     parks = fetchPark();
+    parks.then((value) => value.forEach((element) {
+          print(element.parking_name);
+          print(element.parking_code);
+          print(element.lat);
+          print(element.lng);
+          var tmpPark = Park(
+              parking_name: element.parking_name,
+              parking_code: element.parking_code,
+              lat: element.lat,
+              lng: element.lng);
+          DBHelper().insertPark(tmpPark);
+        }));
   }
 
   @override
@@ -66,6 +81,21 @@ class _MyAppState extends State<MyApp> {
               return CircularProgressIndicator();
             },
           ),
+        ),
+        floatingActionButton: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            FloatingActionButton(
+              child: Icon(Icons.local_parking),
+              onPressed: () {
+                DBHelper dbHelper = DBHelper();
+                dbHelper.parks().then((value) => value.forEach((element) {
+                      print(
+                          'parking_code:${element.parking_code}, parking_name:${element.parking_name}');
+                    }));
+              },
+            ),
+          ],
         ),
       ),
     );
