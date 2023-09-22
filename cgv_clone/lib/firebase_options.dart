@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBm1hosYBVxmR4kz9qXrwqDnrO9fJt9DbU',
-    appId: '1:25938226207:web:85e8f7d7192d559fdb792a',
-    messagingSenderId: '25938226207',
-    projectId: 'cgv-clne',
-    authDomain: 'cgv-clne.firebaseapp.com',
-    storageBucket: 'cgv-clne.appspot.com',
-    measurementId: 'G-Z1N45YL51S',
+    apiKey: 'AIzaSyCW3cb0wj61q1pZhwgNv_V6n-CpwCXPXcU',
+    appId: '1:28758594488:web:bd48a6867c4f64c650354d',
+    messagingSenderId: '28758594488',
+    projectId: 'login-5405b',
+    authDomain: 'login-5405b.firebaseapp.com',
+    storageBucket: 'login-5405b.appspot.com',
+    measurementId: 'G-YKFCY5G9QV',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDLK4wH2qRLZ6apvGIa4FqfFex89bOBC9U',
-    appId: '1:25938226207:android:00bb712e5aef00b6db792a',
-    messagingSenderId: '25938226207',
-    projectId: 'cgv-clne',
-    storageBucket: 'cgv-clne.appspot.com',
+    apiKey: 'AIzaSyC0i5_Dk5NMsHL6gLsJD2_hTuIcSFSsJrA',
+    appId: '1:28758594488:android:7c88feb2bfb2385d50354d',
+    messagingSenderId: '28758594488',
+    projectId: 'login-5405b',
+    storageBucket: 'login-5405b.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyAwNolJApR7-Drmmg3kb7lQSxhqw_Uv6f4',
-    appId: '1:25938226207:ios:94586fda6ad1a20adb792a',
-    messagingSenderId: '25938226207',
-    projectId: 'cgv-clne',
-    storageBucket: 'cgv-clne.appspot.com',
+    apiKey: 'AIzaSyANRIJ7XWpb_mGbuBSwlxslAXm5iq9N0OA',
+    appId: '1:28758594488:ios:0f8004c42ed5807a50354d',
+    messagingSenderId: '28758594488',
+    projectId: 'login-5405b',
+    storageBucket: 'login-5405b.appspot.com',
     iosBundleId: 'com.example.cgvClone',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyAwNolJApR7-Drmmg3kb7lQSxhqw_Uv6f4',
-    appId: '1:25938226207:ios:370b3f217a4e0be3db792a',
-    messagingSenderId: '25938226207',
-    projectId: 'cgv-clne',
-    storageBucket: 'cgv-clne.appspot.com',
+    apiKey: 'AIzaSyANRIJ7XWpb_mGbuBSwlxslAXm5iq9N0OA',
+    appId: '1:28758594488:ios:e3785186b0dbc11e50354d',
+    messagingSenderId: '28758594488',
+    projectId: 'login-5405b',
+    storageBucket: 'login-5405b.appspot.com',
     iosBundleId: 'com.example.cgvClone.RunnerTests',
   );
 }
