@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyANRIJ7XWpb_mGbuBSwlxslAXm5iq9N0OA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>28758594488</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.dailyCatsApp</string>
+	<key>PROJECT_ID</key>
+	<string>login-5405b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>login-5405b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:28758594488:ios:da0a3cedc886a34550354d</string>
+	<key>DATABASE_URL</key>
+	<string>https://login-5405b-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

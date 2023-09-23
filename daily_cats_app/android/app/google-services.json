@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "28758594488",
+    "firebase_url": "https://login-5405b-default-rtdb.firebaseio.com",
+    "project_id": "login-5405b",
+    "storage_bucket": "login-5405b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28758594488:android:7c88feb2bfb2385d50354d",
+        "android_client_info": {
+          "package_name": "com.example.cgv_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0i5_Dk5NMsHL6gLsJD2_hTuIcSFSsJrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28758594488:android:b135b112ecef016450354d",
+        "android_client_info": {
+          "package_name": "com.example.daily_cats_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0i5_Dk5NMsHL6gLsJD2_hTuIcSFSsJrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28758594488:android:49bf9cfcdff716b550354d",
+        "android_client_info": {
+          "package_name": "com.example.login_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0i5_Dk5NMsHL6gLsJD2_hTuIcSFSsJrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
