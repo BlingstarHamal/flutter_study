@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         options: DefaultFirebaseOptions.currentPlatform,
       ),
       builder: (context, snapshot) {
-        return MaterialApp(
+        return const MaterialApp(
           title: 'CGV Clone',
           debugShowCheckedModeBanner: false,
           home: MyHomPage(),

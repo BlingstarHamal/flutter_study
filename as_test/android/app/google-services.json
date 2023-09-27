@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "274426896884",
+    "project_id": "ascamp-d4e76",
+    "storage_bucket": "ascamp-d4e76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274426896884:android:a98c36c1bdde2a50a719a1",
+        "android_client_info": {
+          "package_name": "com.example.as_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5OVm12JCTU1prgVAeXKYI_jlQzsWtUkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

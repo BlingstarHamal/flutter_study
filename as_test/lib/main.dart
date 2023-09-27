@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/home/home_screen.dart';
+import 'package:as_test/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,10 +12,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: "AstroCamp",
-      debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+    return FutureBuilder(
+      future: Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+      ),
+      builder: (context, snapshot) {
+        return const MaterialApp(
+          title: "AstroCamp",
+          debugShowCheckedModeBanner: false,
+          home: MyHomePage(),
+        );
+      },
     );
   }
 }

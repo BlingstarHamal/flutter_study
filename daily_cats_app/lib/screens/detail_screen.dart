@@ -87,7 +87,7 @@ class _DetailScreenState extends State<DetailScreen> {
                   replies.length,
                   (index) => Padding(
                     padding: const EdgeInsets.only(
-                      top: 10.0,
+                      top: 5.0,
                     ),
                     child: Row(
                       children: [

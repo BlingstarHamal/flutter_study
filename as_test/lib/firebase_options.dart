@@ -44,42 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCW3cb0wj61q1pZhwgNv_V6n-CpwCXPXcU',
-    appId: '1:28758594488:web:bd48a6867c4f64c650354d',
-    messagingSenderId: '28758594488',
-    projectId: 'login-5405b',
-    authDomain: 'login-5405b.firebaseapp.com',
-    databaseURL: 'https://login-5405b-default-rtdb.firebaseio.com',
-    storageBucket: 'login-5405b.appspot.com',
-    measurementId: 'G-YKFCY5G9QV',
+    apiKey: 'AIzaSyB9xtmqYtjFRyWfFeH1__VitKqiUyLFl8M',
+    appId: '1:274426896884:web:83e4e2f3f06983d3a719a1',
+    messagingSenderId: '274426896884',
+    projectId: 'ascamp-d4e76',
+    authDomain: 'ascamp-d4e76.firebaseapp.com',
+    storageBucket: 'ascamp-d4e76.appspot.com',
+    measurementId: 'G-GWF4EQRZZ7',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC0i5_Dk5NMsHL6gLsJD2_hTuIcSFSsJrA',
-    appId: '1:28758594488:android:b135b112ecef016450354d',
-    messagingSenderId: '28758594488',
-    projectId: 'login-5405b',
-    databaseURL: 'https://login-5405b-default-rtdb.firebaseio.com',
-    storageBucket: 'login-5405b.appspot.com',
+    apiKey: 'AIzaSyC5OVm12JCTU1prgVAeXKYI_jlQzsWtUkE',
+    appId: '1:274426896884:android:a98c36c1bdde2a50a719a1',
+    messagingSenderId: '274426896884',
+    projectId: 'ascamp-d4e76',
+    storageBucket: 'ascamp-d4e76.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyANRIJ7XWpb_mGbuBSwlxslAXm5iq9N0OA',
-    appId: '1:28758594488:ios:da0a3cedc886a34550354d',
-    messagingSenderId: '28758594488',
-    projectId: 'login-5405b',
-    databaseURL: 'https://login-5405b-default-rtdb.firebaseio.com',
-    storageBucket: 'login-5405b.appspot.com',
-    iosBundleId: 'com.example.dailyCatsApp',
+    apiKey: 'AIzaSyBOl_uP3DhyKYTHm9vJEwNsQ2PBsF3ejmA',
+    appId: '1:274426896884:ios:f5132aa139a354e5a719a1',
+    messagingSenderId: '274426896884',
+    projectId: 'ascamp-d4e76',
+    storageBucket: 'ascamp-d4e76.appspot.com',
+    iosBundleId: 'com.example.asTest',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyANRIJ7XWpb_mGbuBSwlxslAXm5iq9N0OA',
-    appId: '1:28758594488:ios:340e2475881fe67550354d',
-    messagingSenderId: '28758594488',
-    projectId: 'login-5405b',
-    databaseURL: 'https://login-5405b-default-rtdb.firebaseio.com',
-    storageBucket: 'login-5405b.appspot.com',
-    iosBundleId: 'com.example.dailyCatsApp.RunnerTests',
+    apiKey: 'AIzaSyBOl_uP3DhyKYTHm9vJEwNsQ2PBsF3ejmA',
+    appId: '1:274426896884:ios:4e193b09fdd2a6c0a719a1',
+    messagingSenderId: '274426896884',
+    projectId: 'ascamp-d4e76',
+    storageBucket: 'ascamp-d4e76.appspot.com',
+    iosBundleId: 'com.example.asTest.RunnerTests',
   );
 }

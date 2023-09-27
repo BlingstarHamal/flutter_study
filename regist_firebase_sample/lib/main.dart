@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
-//import 'package:flutter/cupertino.dart';
 import 'firebase_options.dart';
 import 'package:flutter/gestures.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -9,9 +8,9 @@ import 'package:fluttertoast/fluttertoast.dart';
 showToast(String msg) {
   Fluttertoast.showToast(
     msg: msg,
-    toastLength: Toast.LENGTH_SHORT,
-    gravity: ToastGravity.CENTER,
-    timeInSecForIosWeb: 1,
+    toastLength: Toast.LENGTH_LONG,
+    gravity: ToastGravity.BOTTOM,
+    timeInSecForIosWeb: 5,
     backgroundColor: Colors.red,
     textColor: Colors.white,
     fontSize: 16.0,
@@ -25,7 +24,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -38,7 +37,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: AuthWidget(),
+      home: const AuthWidget(),
     );
   }
 }
@@ -71,15 +70,15 @@ class _AuthWidgetState extends State<AuthWidget> {
             isInput = false;
           });
         } else {
-          showToast('emailVerified error');
+          showToast('이메일 인증 오류');
         }
         return value;
       });
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
-        showToast('user-not-found');
+        showToast('가입되지 않은 이메일 입니다.');
       } else if (e.code == 'wrong-password') {
-        showToast('wrong-password');
+        showToast('잘못된 비밀번호 입니다.');
       } else {
         print(e.code);
       }
@@ -108,9 +107,9 @@ class _AuthWidgetState extends State<AuthWidget> {
       });
     } on FirebaseAuthException catch (e) {
       if (e.code == 'week-password') {
-        showToast('weak-password');
+        showToast('취약한 비밀번호 입니다.');
       } else if (e.code == 'email-already-in-use') {
-        showToast('email-already-in-use');
+        showToast('사용 중인 이메일 입니다.');
       } else {
         showToast('other error');
         print(e.code);
@@ -126,7 +125,7 @@ class _AuthWidgetState extends State<AuthWidget> {
       Text(
         // 상단 로그인 회원가입 타이틀
         isSignIn ? "로그인" : "회원가입",
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.indigo,
           fontWeight: FontWeight.bold,
           fontSize: 20,
@@ -141,7 +140,7 @@ class _AuthWidgetState extends State<AuthWidget> {
         child: Column(
           children: [
             TextFormField(
-              decoration: InputDecoration(labelText: '이메일'),
+              decoration: const InputDecoration(labelText: '이메일'),
               validator: (value) {
                 if (value?.isEmpty ?? false) {
                   return '이메일을 입력 하세요';
@@ -154,7 +153,7 @@ class _AuthWidgetState extends State<AuthWidget> {
               keyboardType: TextInputType.emailAddress,
             ),
             TextFormField(
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: '비밀번호',
               ),
               obscureText: true,
@@ -175,8 +174,8 @@ class _AuthWidgetState extends State<AuthWidget> {
       // 하단 로그인,회원가입 버튼
       // elevated는 오른쪽과 아래로 그림자가 생기는 버튼
       Container(
-        margin: EdgeInsets.only(
-          top: 20.0,
+        margin: const EdgeInsets.only(
+          top: 25.0,
         ),
         child: ElevatedButton(
             onPressed: () {
@@ -194,26 +193,31 @@ class _AuthWidgetState extends State<AuthWidget> {
       ),
 
       // go 회원가입, 로그인 글씨
-      RichText(
-        textAlign: TextAlign.right,
-        text: TextSpan(
-          text: 'Go ',
-          style: Theme.of(context).textTheme.bodyLarge,
-          children: <TextSpan>[
-            TextSpan(
-                text: isSignIn ? "회원가입" : "로그인",
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.underline,
-                ),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    setState(() {
-                      isSignIn = !isSignIn;
-                    });
-                  }),
-          ],
+      Container(
+        margin: const EdgeInsets.only(
+          top: 10,
+        ),
+        child: RichText(
+          textAlign: TextAlign.right,
+          text: TextSpan(
+            text: 'Go ',
+            style: Theme.of(context).textTheme.bodyLarge,
+            children: <TextSpan>[
+              TextSpan(
+                  text: isSignIn ? "회원가입" : "로그인",
+                  style: const TextStyle(
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.underline,
+                  ),
+                  recognizer: TapGestureRecognizer()
+                    ..onTap = () {
+                      setState(() {
+                        isSignIn = !isSignIn;
+                      });
+                    }),
+            ],
+          ),
         ),
       ),
     ];
@@ -222,13 +226,15 @@ class _AuthWidgetState extends State<AuthWidget> {
   List<Widget> getResultWidget() {
     String resultEmail = FirebaseAuth.instance.currentUser!.email!;
     return [
-      Text(
-        isSignIn
-            ? "$resultEmail로 로그인 하셨습니다!"
-            : "$resultEmail로 회원 가입 하셨습니다! 이메일 인증을 거쳐야 로그인이 가능합니다.",
-        style: TextStyle(
-          color: Colors.black54,
-          fontWeight: FontWeight.bold,
+      Center(
+        child: Text(
+          isSignIn
+              ? "$resultEmail로 로그인 하셨습니다!"
+              : "$resultEmail로 회원 가입 하셨습니다! 이메일 인증을 거쳐야 로그인이 가능합니다.",
+          style: const TextStyle(
+            color: Colors.black54,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
       ElevatedButton(
@@ -257,7 +263,7 @@ class _AuthWidgetState extends State<AuthWidget> {
 
       // 하단 로그인 버튼 및 go 회원가입 위치
       body: Container(
-        margin: EdgeInsets.all(20),
+        margin: const EdgeInsets.all(30),
         child: Column(
           //mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,

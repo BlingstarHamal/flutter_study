@@ -29,7 +29,7 @@ class MyHomPage extends StatelessWidget {
       length: menuItems.length,
       child: Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             "CGV",
             style: TextStyle(
               fontSize: 26.0,
@@ -58,7 +58,7 @@ class MyHomPage extends StatelessWidget {
 
           // 상단 바아래 메뉴탭
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(40.0),
+            preferredSize: const Size.fromHeight(40.0),
             child: Container(
               color: Colors.red,
               child: TabBar(
@@ -87,10 +87,10 @@ class MyHomPage extends StatelessWidget {
                 // 상단 배너
                 ImageSliderWidget(bannerUrlItems: bannerUrlItems),
                 // 무비차트
-                MovieChartWidget(),
+                const MovieChartWidget(),
 
                 // 하단바 -> 바텀네비를 사용해서 아래로 내리는 편이 나을것 같다.
-                Divider(
+                const Divider(
                   thickness: 5.0,
                 ),
                 Padding(
@@ -110,19 +110,19 @@ class MyHomPage extends StatelessWidget {
             // Center(
             //   child: Text('홈 화면 입니다.'),
             // ),
-            Center(
+            const Center(
               child: Text('이벤트 화면 입니다.'),
             ),
-            Center(
+            const Center(
               child: Text('무비톡 화면 입니다.'),
             ),
-            Center(
+            const Center(
               child: Text('패스트오더 화면 입니다.'),
             ),
-            Center(
+            const Center(
               child: Text('기프트샵 화면 입니다.'),
             ),
-            Center(
+            const Center(
               child: Text('@CGV 화면 입니다.'),
             ),
           ],
@@ -143,12 +143,12 @@ class MyHomPage extends StatelessWidget {
           ),
           child: Icon(icon),
         ),
-        SizedBox(
+        const SizedBox(
           height: 5.0,
         ),
         Text(
           label,
-          style: TextStyle(fontSize: 12.0),
+          style: const TextStyle(fontSize: 12.0),
         ),
       ],
     );

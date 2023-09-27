@@ -85,9 +85,9 @@ class _UploadScreenState extends State<UploadScreen> {
                                 width: 200.0,
                                 height: 200.0,
                               )
-                            : Column(
+                            : const Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: const [
+                                children: [
                                   Icon(
                                     Icons.upload,
                                     size: 50.0,

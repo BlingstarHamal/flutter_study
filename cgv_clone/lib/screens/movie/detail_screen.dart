@@ -20,7 +20,7 @@ class DetailScreen extends StatelessWidget {
           style: Theme.of(context).textTheme.titleLarge,
         ),
         backgroundColor: Colors.white,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black87,
         ),
       ),
@@ -64,13 +64,13 @@ class DetailScreen extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                     Padding(
-                      padding: EdgeInsets.all(12.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             thisMovie.title,
-                            style: TextStyle(
+                            style: const TextStyle(
                               color: Colors.white,
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
@@ -78,11 +78,11 @@ class DetailScreen extends StatelessWidget {
                           ),
                           Text(
                             thisMovie.subTitle,
-                            style: TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white),
                           ),
                           Text(
                             thisMovie.runTime,
-                            style: TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white),
                           ),
                         ],
                       ),
@@ -98,12 +98,8 @@ class DetailScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(4.0),
             child: OutlinedButton(
-              child: Text(
-                "실관람평 등록하기",
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
               style: OutlinedButton.styleFrom(
-                side: BorderSide(color: Colors.black87),
+                side: const BorderSide(color: Colors.black87),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.0),
                 ),
@@ -115,6 +111,10 @@ class DetailScreen extends StatelessWidget {
                       builder: (context) => ReviewScreen(item: thisMovie)),
                 );
               },
+              child: Text(
+                "실관람평 등록하기",
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
             ),
           ),
           // 리뷰 목록 만들기
@@ -128,7 +128,7 @@ class DetailScreen extends StatelessWidget {
                 children: snapshot.data!.docs.map((DocumentSnapshot document) {
                   // return Text('${document['name']} : ${document['comment']}');
                   return ListTile(
-                    leading: CircleAvatar(
+                    leading: const CircleAvatar(
                       backgroundColor: Colors.grey,
                       child: Icon(
                         Icons.person,
@@ -140,7 +140,7 @@ class DetailScreen extends StatelessWidget {
                       children: [
                         Text(
                           document['evaluation'],
-                          style: TextStyle(color: Colors.brown),
+                          style: const TextStyle(color: Colors.brown),
                         ),
                         Row(
                           children: [
@@ -148,12 +148,12 @@ class DetailScreen extends StatelessWidget {
                               document['name'],
                               style: Theme.of(context).textTheme.titleLarge,
                             ),
-                            Spacer(),
+                            const Spacer(),
                             Text(
                               (document['registration_date'])
                                   .toDate()
                                   .toString(),
-                              style: TextStyle(color: Colors.grey),
+                              style: const TextStyle(color: Colors.grey),
                             ),
                           ],
                         ),

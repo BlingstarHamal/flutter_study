@@ -10,7 +10,7 @@ class MovieChartWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 16.0),
+      padding: const EdgeInsets.only(left: 16.0),
       child: Column(
         children: [
           Row(
@@ -19,9 +19,9 @@ class MovieChartWidget extends StatelessWidget {
                 "무비차트",
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              Spacer(),
+              const Spacer(),
               TextButton(
-                child: Row(
+                child: const Row(
                   children: [
                     Text(
                       "전체보기",
@@ -39,7 +39,7 @@ class MovieChartWidget extends StatelessWidget {
             ],
           ),
           // 영화 포스터 영역
-          Container(
+          SizedBox(
             height: 300.0,
             child: ListView(
               scrollDirection: Axis.horizontal,
@@ -72,7 +72,7 @@ Widget buildRankPoster(Movie movie) {
       children: [
         // 1 포스터 이미지
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             boxShadow: [
               BoxShadow(
                 color: Colors.black38,
@@ -98,7 +98,7 @@ Widget buildRankPoster(Movie movie) {
                 bottom: -8.0,
                 child: Text(
                   movie.rank.toString(),
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 50.0,
                     fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
@@ -116,20 +116,20 @@ Widget buildRankPoster(Movie movie) {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 10.0,
         ), // 위젯사이 간격
         //영화제목
         Text(
           movie.title,
-          style: TextStyle(
+          style: const TextStyle(
             fontWeight: FontWeight.bold,
           ),
         ),
         // 영화 예매율
         Text(
           "현재예매율 ${movie.rating}",
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.grey,
             fontSize: 10,
           ),
