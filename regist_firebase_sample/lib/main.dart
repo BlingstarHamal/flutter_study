@@ -275,4 +275,3 @@ class _AuthWidgetState extends State<AuthWidget> {
 }
 
 
-User(displayName, email = blingstarhamal@gmail.com, isEmailVerified: true, isAnonymous: false, metadata: UserMetadata(creationTime: 2023-09-27 09:33:02.622Z, lastSignInTime: 2023-09-28 02:50:10.659Z), phoneNumber: null, photoURL: null, providerData, [UserInfo(displayName: null, email: blingstarhamal@gmail.com, phoneNumber: null, photoURL: null, providerId: password, uid: blingstarhamal@gmail.com)], refreshToken: AMf-vBwQO1yLrSg6GzTAaM0AkhzCjLeTLjNT01XbTy9qR4FiQUK6-Wj7jUuC9XSjTcKF2giwjP7hdYGQeVSED-pzmRLvcCSanA7AUbWGpj4MI3rC7yqLQhDubqBe99JAb-VI9QHTx6GMfWRDtRYgdknI95hxnItQisb5xtsyMvF6wiUnBDFAbPTDLNZcuG7VobOiK7TuTGV8ynBKd10cW3L1gvYM0_7lGg, tenantId: null, uid: An1XusVJtoRCG6sVuTIFAIOXXXG3)
