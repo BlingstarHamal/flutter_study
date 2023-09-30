@@ -31,7 +31,9 @@ class _HomeScreenState extends State<HomeScreen> {
               context: context,
               // (_) 기본 파라미터를 안쓴다는 의미
               builder: (_) => const ScheduleBottomSheet(),
-              isDismissible: true);
+              isDismissible: true,
+              // 일정 추가 키보드 사용시 스크롤 오류 해결
+              isScrollControlled: true);
         },
         child: const Icon(
           Icons.add,
