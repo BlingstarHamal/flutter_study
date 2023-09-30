@@ -1,3 +1,4 @@
+//import 'package:as_test/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:firebase_core/firebase_core.dart';
@@ -30,6 +31,9 @@ class _AuthWidgetState extends State<AuthWidget> {
 
   late String email;
   late String password;
+  String uid = FirebaseAuth.instance.currentUser!.uid;
+  //final String uid;
+
   bool isInput = true;
   bool isSignIn = true;
 
@@ -39,7 +43,7 @@ class _AuthWidgetState extends State<AuthWidget> {
       await FirebaseAuth.instance
           .signInWithEmailAndPassword(email: email, password: password)
           .then((value) {
-        print(value);
+        // print(value); // 유저 정보 콘솔에 프린트
         if (value.user!.emailVerified) {
           setState(() {
             isInput = false;
@@ -47,7 +51,10 @@ class _AuthWidgetState extends State<AuthWidget> {
         } else {
           showToast('이메일 인증 오류');
         }
-        return value;
+        //return value;
+        // 홈화면으로 이동
+        //   Navigator.push(context,
+        //       MaterialPageRoute(builder: (context) => const MyHomePage()));
       });
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {

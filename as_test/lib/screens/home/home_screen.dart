@@ -1,33 +1,15 @@
 import 'package:as_test/widgets/image_slider_widget.dart';
 import 'package:flutter/material.dart';
 import '../auth.dart';
+import '../../items/menu.dart';
+import '../../items/banner.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    List<String> menuItems = [
-      '홈',
-      '공지사항',
-      '프로그램',
-      '예약안내',
-      '커뮤니티',
-      'Shop',
-    ];
-
-    List<String> bannerUrlItems = [
-      "assets/images/vis1_2.jpg",
-      "assets/images/vis2_jupiter.gif",
-      "assets/images/vis3.jpg",
-    ];
-
-    List<String> bannerPhrases = [
-      "assets/images/vis-txt1.png",
-      "assets/images/vis-txt2.png",
-      "assets/images/vis-txt3.png",
-    ];
-
     final sizeX = MediaQuery.of(context).size.width;
     final sizeY = MediaQuery.of(context).size.height;
 
@@ -64,17 +46,19 @@ class MyHomePage extends StatelessWidget {
           centerTitle: true,
           title: Image.asset('assets/images/logo.png',
               width: 80.0, height: 80.0, fit: BoxFit.fitWidth),
-          leading: IconButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const MyHomePage()),
-              );
-            },
-            icon: const Icon(Icons.home),
-            color: const Color.fromARGB(255, 21, 52, 107),
-          ),
+          // leading: IconButton(
+          //   onPressed: () {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(builder: (context) => const MyHomePage()),
+          //     );
+          //   },
+          //   icon: const Icon(Icons.home),
+          //   color: const Color.fromARGB(255, 21, 52, 107),
+          // ),
           actions: [
+            /// 로그인 상태를 파악해서 로그인/로그아웃 버튼을 선택하게 만들어줘야함.
+            /// uid를 알면 로그인 버튼 / null이면 로그아웃 버튼 구현 필요
             IconButton(
               onPressed: () {
                 Navigator.push(
