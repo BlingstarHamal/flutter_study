@@ -1,9 +1,14 @@
 import 'package:schedule/component/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:schedule/const/colors.dart';
-import 'package:drift/drift.dart' hide Column;
-import 'package:get_it/get_it.dart';
-import 'package:schedule/database/drift_database.dart';
+// import 'package:drift/drift.dart' hide Column;
+// import 'package:get_it/get_it.dart';
+// import 'package:schedule/database/drift_database.dart';
+import 'package:schedule/model/schedule_model.dart';
+// import 'package:provider/provider.dart';
+// import 'package:schedule/provider/schedule_provider.dart';
+import 'package:uuid/uuid.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class ScheduleBottomSheet extends StatefulWidget {
   final DateTime selectedDate;
@@ -82,7 +87,11 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
                 SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
-                    onPressed: onSavePressed,
+                    // 드리프트 온프레스드
+                    // onPressed: onSavePressed,
+
+                    // 프로바이더 온프레스드
+                    onPressed: () => onSavePressed(context),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: PRIMARY_COLOR,
                     ),
@@ -97,22 +106,50 @@ class _ScheduleBottomSheetState extends State<ScheduleBottomSheet> {
     );
   }
 
-  void onSavePressed() async {
+  //void onSavePressed() async {
+
+  void onSavePressed(BuildContext context) async {
     if (formKey.currentState!.validate()) {
       formKey.currentState!.save();
 
       // print(startTime);
       // print(endTime);
       // print(content);
+
+      // 드리프트 일정 생성
       // 일정 생성
-      await GetIt.I<LocalDatabase>().createSchedule(
-        SchedulesCompanion(
-          startTime: Value(startTime!),
-          endTime: Value(endTime!),
-          content: Value(content!),
-          date: Value(widget.selectedDate),
-        ),
+      // await GetIt.I<LocalDatabase>().createSchedule(
+      //   SchedulesCompanion(
+      //     startTime: Value(startTime!),
+      //     endTime: Value(endTime!),
+      //     content: Value(content!),
+      //     date: Value(widget.selectedDate),
+      //   ),
+      // );
+
+      // 프로바이더 일정생성
+      // context.read<ScheduleProvider>().createSchedule(
+      //       schedule: ScheduleModel(
+      //           id: 'new_model',
+      //           content: content!,
+      //           date: widget.selectedDate,
+      //           startTime: startTime!,
+      //           endTime: endTime!),
+      //     );
+
+      //firebase
+      final schedule = ScheduleModel(
+        id: const Uuid().v4(),
+        content: content!,
+        date: widget.selectedDate,
+        startTime: startTime!,
+        endTime: endTime!,
       );
+
+      await FirebaseFirestore.instance
+          .collection('schedule')
+          .doc(schedule.id)
+          .set(schedule.toJson());
 
       // 일정 생성 후 화면 뒤로 가기
       Navigator.of(context).pop();
