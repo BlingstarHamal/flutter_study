@@ -57,16 +57,21 @@ class _HomeScreenState extends State<HomeScreen> {
                           item['title'],
                           style: const TextStyle(height: 2.0),
                         ),
-                        const Divider(
-                          thickness: 5,
-                          height: 5,
-                          color: Colors.grey,
-                        )
+                        // const Divider(
+                        //   thickness: 5,
+                        //   height: 5,
+                        //   color: Colors.grey,
+                        // )
                       ],
                     ))
                 .toList(),
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.blue,
+        onPressed: () {},
+        child: const Icon(Icons.add),
       ),
     );
   }

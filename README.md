@@ -44,8 +44,14 @@ schedule
 
 ---
 
-
-
 ## 개인적으로 진행 중인 작업
 
 as_test
+
+---
+
+---
+
+## Flutter 유튜브를 보고 진행한 것
+
+getx_board [메타코딩](https://www.youtube.com/playlist?list=PL93mKxaRDidESjm_xR9BEKj5VJQMXy0tM)

@@ -122,7 +122,7 @@ class _HomeScreenState extends State<HomeScreen> {
               height: 8.0,
             ),
 
-            // firebase
+            // firebase 일정 받아오기
             Expanded(
               child: StreamBuilder<QuerySnapshot>(
                 stream: FirebaseFirestore.instance

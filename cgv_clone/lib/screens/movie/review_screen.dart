@@ -11,8 +11,8 @@ class ReviewScreen extends StatefulWidget {
 }
 
 class _ReviewScreenState extends State<ReviewScreen> {
-  TextEditingController reviewIdController = new TextEditingController();
-  TextEditingController reviewTextController = new TextEditingController();
+  TextEditingController reviewIdController = TextEditingController();
+  TextEditingController reviewTextController = TextEditingController();
   List<String> choices = ['Good!', 'Bad.'];
   int choice_index = 0;
 
@@ -26,7 +26,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
           style: Theme.of(context).textTheme.titleLarge,
         ),
         backgroundColor: Colors.white,
-        iconTheme: IconThemeData(
+        iconTheme: const IconThemeData(
           color: Colors.black87,
         ),
       ),
@@ -34,11 +34,11 @@ class _ReviewScreenState extends State<ReviewScreen> {
         children: [
           Container(
             color: Colors.black12,
-            padding: EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12.0),
             child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(10.0),
                   child: Text(
                     "영화 어땠나요?",
                     style: Theme.of(context).textTheme.titleLarge,
@@ -51,7 +51,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                     choices.length,
                     (index) {
                       return ChoiceChip(
-                        padding: EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.all(10.0),
                         label: Text(
                           choices[index],
                           style: TextStyle(
@@ -60,7 +60,8 @@ class _ReviewScreenState extends State<ReviewScreen> {
                                   : Colors.black,
                               fontSize: 20),
                         ),
-                        labelPadding: EdgeInsets.symmetric(horizontal: 50),
+                        labelPadding:
+                            const EdgeInsets.symmetric(horizontal: 50),
                         selected: choice_index == index,
                         onSelected: (value) {
                           setState(() {
@@ -89,17 +90,17 @@ class _ReviewScreenState extends State<ReviewScreen> {
                   "나의 감상평",
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 TextField(
                   controller: reviewIdController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: '작성자',
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 TextField(
@@ -107,7 +108,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                   maxLines: 5,
                   keyboardType: TextInputType.multiline,
                   controller: reviewTextController,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: '내용',
                   ),
@@ -125,7 +126,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                         showDialog<String>(
                           context: context,
                           builder: (BuildContext context) => AlertDialog(
-                            content: Text('리뷰를 입력하세요.'),
+                            content: const Text('리뷰를 입력하세요.'),
                             actions: <Widget>[
                               TextButton(
                                 onPressed: () => Navigator.pop(context, 'OK'),
@@ -140,7 +141,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
                         Navigator.pop(context);
                       }
                     },
-                    child: Text(
+                    child: const Text(
                       '제출',
                       style: TextStyle(
                         color: Colors.white,

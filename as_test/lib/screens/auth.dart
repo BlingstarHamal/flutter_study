@@ -1,4 +1,5 @@
 //import 'package:as_test/screens/home/home_screen.dart';
+import 'package:as_test/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 // import 'package:firebase_core/firebase_core.dart';
@@ -239,8 +240,38 @@ class _AuthWidgetState extends State<AuthWidget> {
     return Scaffold(
       // 상단 바
       appBar: AppBar(
-        title: const Text("로그인 페이지 테스트"),
+        //title: const Text("로그인 페이지 테스트"),
+        backgroundColor: Colors.white,
         centerTitle: true,
+        title: Image.asset('assets/images/logo.png',
+            width: 80.0, height: 80.0, fit: BoxFit.fitWidth),
+        // leading: IconButton(
+        //   onPressed: () {
+        //     Navigator.push(
+        //       context,
+        //       MaterialPageRoute(builder: (context) => const MyHomePage()),
+        //     );
+        //   },
+        //   icon: const Icon(Icons.home),
+        //   color: const Color.fromARGB(255, 21, 52, 107),
+        // ),
+        actions: [
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const MyHomePage()),
+              );
+            },
+            icon: const Icon(Icons.home),
+            color: const Color.fromARGB(255, 21, 52, 107),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.menu),
+            color: const Color.fromARGB(255, 21, 52, 107),
+          ),
+        ],
       ),
 
       // 하단 로그인 버튼 및 go 회원가입 위치

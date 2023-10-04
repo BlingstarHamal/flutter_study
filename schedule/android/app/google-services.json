@@ -27,6 +27,25 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:28758594488:android:d773ae150b9d9b3350354d",
+        "android_client_info": {
+          "package_name": "com.example.calendar_scheduler"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0i5_Dk5NMsHL6gLsJD2_hTuIcSFSsJrA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:28758594488:android:7c88feb2bfb2385d50354d",
         "android_client_info": {
           "package_name": "com.example.cgv_clone"
