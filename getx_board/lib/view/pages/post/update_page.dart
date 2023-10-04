@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getx_board/controller/post_controller.dart';
 import 'package:getx_board/view/components/custom_text_form_field.dart';
 import 'package:getx_board/view/components/custom_textarea.dart';
 import 'package:getx_board/view/pages/post/detail_page.dart';
@@ -10,11 +11,17 @@ import 'package:get/get.dart';
 
 class UpdatePage extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
+  final TextEditingController _title = TextEditingController();
+  final TextEditingController _content = TextEditingController();
 
   UpdatePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final PostController p = Get.find();
+    _title.text = "${p.post.value.title}";
+    _content.text = "${p.post.value.content}";
+
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
@@ -24,22 +31,24 @@ class UpdatePage extends StatelessWidget {
           child: ListView(
             children: [
               CustomTextFormField(
+                controller: _title,
                 hint: 'Title',
                 funValidator: validateTitle(),
-                value: '제목1' * 3,
               ),
               CustomTextArea(
+                controller: _content,
                 hint: "content",
                 funValidator: validateContent(),
-                value: '내용1' * 20,
               ),
               // homepage -> detailpage
               CustomElevatedButton(
                 text: '글 수정하기',
-                funPageRoute: () {
+                funPageRoute: () async {
                   if (_formKey.currentState!.validate()) {
+                    await p.updateById(
+                        p.post.value.id ?? 0, _title.text, _content.text);
                     // 같은 page가 있으면 이동할 때 덮어씌우기가 없음
-                    Get.back(); // 상태관리로 getx 라이브러리 - obs 사용해야함
+                    Get.back(); // 상태관리로 getx 라이브러리 - obs 사용해야함 but, detail page 에서 post를 관찰중이라 back으로도 변경됨
                   }
                 },
               ),

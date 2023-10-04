@@ -8,7 +8,7 @@ Function validateUsername() {
       return "유저네임에 한글나 특수문자가 들어갈 수 없습니다.";
     } else if (value.length > 12) {
       return "유저네임의 최대 길이는 12자 입니다.";
-    } else if (value.length < 4) {
+    } else if (value.length < 3) {
       return "유저네임의 최소 길이는 4자 입니다.";
     } else {
       return null;
