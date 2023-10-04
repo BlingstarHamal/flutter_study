@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:getx_board/view/pages/user/login_page.dart';
+// import 'package:get/get.dart';
+// import 'package:getx_board/view/pages/user/login_page.dart';
 
 class CustomElevatedButton extends StatelessWidget {
   final String text;

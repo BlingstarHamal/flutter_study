@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:getx_board/controller/post_controller.dart';
 import 'package:getx_board/view/components/custom_text_form_field.dart';
 import 'package:getx_board/view/components/custom_textarea.dart';
-import 'package:getx_board/view/pages/post/detail_page.dart';
-import 'package:getx_board/view/pages/post/home_page.dart';
 import 'package:getx_board/util/validator_util.dart';
 import 'package:getx_board/view/components/custom_elevated_button.dart';
 

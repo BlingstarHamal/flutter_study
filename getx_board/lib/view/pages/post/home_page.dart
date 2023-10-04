@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_board/controller/post_controller.dart';
 import 'package:getx_board/controller/user_controller.dart';
-import 'package:getx_board/domain/user/user.dart';
 import 'package:getx_board/view/pages/post/detail_page.dart';
 import 'package:getx_board/view/pages/post/write_page.dart';
 import 'package:getx_board/view/pages/user/login_page.dart';

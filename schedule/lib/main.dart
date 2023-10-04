@@ -18,7 +18,7 @@ void main() async {
   );
 
   await initializeDateFormatting(); // intl 패키지 초기화
-  
+
   // // 프로바이 더 및 드리프트
   // // 데이터 베이스 생성
   // final database = LocalDatabase();

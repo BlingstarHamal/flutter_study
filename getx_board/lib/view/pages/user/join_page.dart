@@ -5,7 +5,6 @@ import 'package:getx_board/view/pages/user/login_page.dart';
 import 'package:getx_board/view/components/custom_text_form_field.dart';
 import 'package:get/get.dart';
 import 'package:getx_board/util/validator_util.dart';
-import 'package:validators/validators.dart';
 
 class JoinPage extends StatelessWidget {
   JoinPage({super.key});
