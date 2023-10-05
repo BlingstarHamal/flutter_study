@@ -42,7 +42,7 @@ daily_cats_app
 
 **[schedule](https://github.com/BlingstarHamal/flutter_study2/blob/main/schedule/README.md) - Drift ( SQL ), Provider( Nodejs - scheduler_server(서버파일) ), firestore database( 최종 적으로 적용 중 ) / 현재 에뮬레이터 버전 오류로 firestore read 실패. upload는 작동함.**
 
-**[schedule](https://github.com/BlingstarHamal/flutter_study2/blob/main/schedule_prov/README.md) - Provider 기능을 사용하여 스케쥴 앱 활성화. Nodejs를 서버로 가지고 있는데, 데이터 저장 자체는 안하고 캐쉬로만 이용함.**
+**[schedule_prov](https://github.com/BlingstarHamal/flutter_study2/blob/main/schedule_prov/README.md) - Provider 기능을 사용하여 스케쥴 앱 활성화. Nodejs를 서버로 가지고 있는데, 데이터 저장 자체는 안하고 캐쉬로만 이용함.**
 
 ---
 
