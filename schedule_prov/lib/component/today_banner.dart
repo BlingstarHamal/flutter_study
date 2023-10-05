@@ -1,4 +1,4 @@
-import 'package:schedule/const/colors.dart';
+import 'package:schedule_prov/const/colors.dart';
 import 'package:flutter/material.dart';
 
 class TodayBanner extends StatelessWidget {

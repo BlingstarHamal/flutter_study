@@ -1,9 +1,9 @@
-import 'package:schedule/component/custom_text_field.dart';
+import 'package:schedule_prov/component/custom_text_field.dart';
 import 'package:flutter/material.dart';
-import 'package:schedule/const/colors.dart';
-import 'package:schedule/model/schedule_model.dart';
+import 'package:schedule_prov/const/colors.dart';
+import 'package:schedule_prov/model/schedule_model.dart';
 import 'package:provider/provider.dart';
-import 'package:schedule/provider/schedule_provider.dart';
+import 'package:schedule_prov/provider/schedule_provider.dart';
 
 class ScheduleBottomSheet extends StatefulWidget {
   final DateTime selectedDate;

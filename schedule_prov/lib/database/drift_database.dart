@@ -1,4 +1,4 @@
-import 'package:schedule/model/schedule.dart';
+import 'package:schedule_prov/model/schedule.dart';
 import 'package:drift/drift.dart';
 import 'package:drift/native.dart';
 import 'package:path_provider/path_provider.dart';

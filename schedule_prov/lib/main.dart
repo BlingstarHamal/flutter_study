@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'screen/home_screen.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:schedule/database/drift_database.dart';
+import 'package:schedule_prov/database/drift_database.dart';
 import 'package:get_it/get_it.dart';
-import 'package:schedule/provider/schedule_provider.dart';
-import 'package:schedule/repository/schedule_repository.dart';
+import 'package:schedule_prov/provider/schedule_provider.dart';
+import 'package:schedule_prov/repository/schedule_repository.dart';
 import 'package:provider/provider.dart';
 
 void main() async {

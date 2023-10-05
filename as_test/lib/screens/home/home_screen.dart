@@ -1,9 +1,10 @@
+import 'package:as_test/screens/auth/login_page.dart';
+import 'package:as_test/screens/auth/signup_page.dart';
+import 'package:as_test/screens/free_board_page.dart';
 import 'package:as_test/widgets/image_slider_widget.dart';
 import 'package:flutter/material.dart';
-import '../auth.dart';
 import '../../items/menu.dart';
 import '../../items/banner.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
@@ -63,7 +64,7 @@ class MyHomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const AuthWidget()),
+                  MaterialPageRoute(builder: (context) => const LoginPage()),
                 );
               },
               icon: const Icon(Icons.login),

@@ -1,12 +1,13 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:schedule/model/schedule_model.dart';
+import 'package:schedule_prov/model/schedule_model.dart';
 import 'package:dio/dio.dart';
 
 class SchduleRepository {
   final _dio = Dio();
   final _targetUrl =
+      // 안드로이드 localhost
       'http://${Platform.isAndroid ? '10.0.2.2' : 'localhost'}:3000/schedule';
 
   Future<List<ScheduleModel>> getSchedules({

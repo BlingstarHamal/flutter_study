@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:schedule/const/colors.dart';
+import 'package:schedule_prov/const/colors.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class MainCalendar extends StatelessWidget {

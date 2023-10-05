@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:schedule/component/schedule_card.dart';
+import 'package:schedule_prov/component/schedule_card.dart';
 import '../component/main_calendar.dart';
-import 'package:schedule/component/today_banner.dart';
-import 'package:schedule/const/colors.dart';
-import 'package:schedule/component/schedule_bottom_sheet.dart';
+import 'package:schedule_prov/component/today_banner.dart';
+import 'package:schedule_prov/const/colors.dart';
+import 'package:schedule_prov/component/schedule_bottom_sheet.dart';
 import 'package:provider/provider.dart';
-import 'package:schedule/provider/schedule_provider.dart';
+import 'package:schedule_prov/provider/schedule_provider.dart';
 
 // drift -> streambuilder 필요
 // provider -> read watch 기능으로 스트림빌더 불필요
