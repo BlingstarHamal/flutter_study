@@ -60,4 +60,4 @@ a. **[getx_board](https://github.com/BlingstarHamal/flutter_study2/blob/main/get
 
 ## 3. 개인 작업
 
-a. **[as_test](https://github.com/BlingstarHamal/flutter_study2/blob/main/as_test/README.mdhttps://) - firebase authentication / 상태 관리의 문제로 중단**
+a. **[as_test](https://github.com/BlingstarHamal/flutter_study2/blob/main/as_test/README.md) - firebase authentication / 상태 관리의 문제로 중단**
