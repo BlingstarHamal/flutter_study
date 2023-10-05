@@ -1,7 +1,5 @@
 # getx_board
 
-# getx_board
-
 First, Change your host in "post_provider.dart" and "host_provider.dart"
 
 Windows cmd
@@ -50,7 +48,7 @@ java -jar auth-jwt-0.0.1-SNAPSHOT.jar
 
 ![1696486317199.png](./1696486317199.png)
 
-글 작성 및 삭제
+글 작성(test) 및 삭제(2 제목2)
 
 ![1696486332018.png](./1696486332018.png)
 
