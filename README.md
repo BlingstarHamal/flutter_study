@@ -1,5 +1,7 @@
 # Flutter_study2
 
+
+
 ## Flutter 책을 읽고 실습한 것들 입니다.
 
 #### '개발이 재미있는 플러터 앱 프로그래밍'
@@ -44,6 +46,8 @@ daily_cats_app
 
 ---
 
+
+
 ## Flutter 유튜브를 보고 진행한 것
 
 **[getx_board](https://github.com/BlingstarHamal/flutter_study2/blob/main/getx_board/README.mdhttps://) - getX를 이용하여 블로그앱 구현 / 회원가입, 로그인, 글쓰기,글수정,글삭제** - [메타코딩](https://www.youtube.com/playlist?list=PL93mKxaRDidESjm_xR9BEKj5VJQMXy0tM)
@@ -51,6 +55,8 @@ daily_cats_app
 ---
 
 ---
+
+
 
 ## 개인적으로 진행 중인 작업
 
