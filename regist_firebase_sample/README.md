@@ -1,16 +1,23 @@
 # regist_firebase_sample
 
-A new Flutter project.
+ ![1696482132240.png](./1696482132240.png)
 
-## Getting Started
+ ![1696482139860.png](./1696482139860.png)
 
-This project is a starting point for a Flutter application.
+ ![1696482149232.png](./1696482149232.png)
 
-A few resources to get you started if this is your first Flutter project:
+ ![1696482161183.png](./1696482161183.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ ![1696482174598.png](./1696482174598.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ ![1696482193806.png](./1696482193806.png)
+
+ ![1696482200038.png](./1696482200038.png)
+
+
+
+ ![1696482218574.png](./1696482218574.png)
+
+ ![1696482231709.png](./1696482231709.png)
+
+ ![1696482272009.png](./1696482272009.png)

@@ -4,7 +4,7 @@ import 'dart:async';
 import 'models/park.dart';
 import 'repositories/dbhelper.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -42,7 +42,7 @@ class _MyAppState extends State<MyApp> {
       title: '오픈API 활용하기',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('공영 주차장 조회'),
+          title: const Text('공영 주차장 조회'),
         ),
         body: Center(
           // child: Column(
@@ -61,16 +61,16 @@ class _MyAppState extends State<MyApp> {
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(snapshot.data?.length != 0
+                    Text(snapshot.data.isNotEmpty
                         ? snapshot.data![0].parking_name
                         : '없음'),
-                    Text(snapshot.data?.length != 0
+                    Text(snapshot.data.isNotEmpty
                         ? snapshot.data![0].parking_code
                         : '없음'),
-                    Text(snapshot.data?.length != 0
+                    Text(snapshot.data.isNotEmpty
                         ? snapshot.data![0].lat.toString()
                         : '없음'),
-                    Text(snapshot.data?.length != 0
+                    Text(snapshot.data.isNotEmpty
                         ? snapshot.data![0].lng.toString()
                         : '없음'),
                   ],
@@ -78,7 +78,7 @@ class _MyAppState extends State<MyApp> {
               } else if (snapshot.hasError) {
                 return Text('${snapshot.error}');
               }
-              return CircularProgressIndicator();
+              return const CircularProgressIndicator();
             },
           ),
         ),
@@ -86,7 +86,7 @@ class _MyAppState extends State<MyApp> {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             FloatingActionButton(
-              child: Icon(Icons.local_parking),
+              child: const Icon(Icons.local_parking),
               onPressed: () {
                 DBHelper dbHelper = DBHelper();
                 dbHelper.parks().then((value) => value.forEach((element) {

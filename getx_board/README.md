@@ -1,16 +1,18 @@
 # getx_board
 
-A new Flutter project.
+First, post_provider.dart, host_provider.dart change your host
 
-## Getting Started
+```cmd window - ipconfig
+//Windows cmd
+ipconfig
+```
 
-This project is a starting point for a Flutter application.
+terminal mac - ipconfig getifaddren0
 
-A few resources to get you started if this is your first Flutter project:
+![1696484381912.png](./1696484381912.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Second, start Spring server
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+java -jar auth-jwt-0.0.1-SNAPSHOT.jar
+
+![1696484297379.png](./1696484297379.png)

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-void main() {runApp(const MyApp());
+
+void main() {
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -24,7 +26,8 @@ class MyHomePage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('아스파라거스 토마토 구이 & 아스파라거스 마늘 볶음',
+          const Text(
+            '아스파라거스 토마토 구이 & 아스파라거스 마늘 볶음',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 24,
@@ -32,8 +35,8 @@ class MyHomePage extends StatelessWidget {
           ),
           Text(
             '만남의 광장에 나온 아스파라거스 요리!\n'
-                '입에 감기는 맛이지만, 쉬운 요리법에\n'
-                '술 안주, 밥 반찬으로 추천!',
+            '입에 감기는 맛이지만, 쉬운 요리법에\n'
+            '술 안주, 밥 반찬으로 추천!',
             style: TextStyle(
               color: Colors.grey[800],
               fontSize: 16,
@@ -43,7 +46,7 @@ class MyHomePage extends StatelessWidget {
       ),
     );
 
-    Row iconSection = Row (
+    Row iconSection = Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         buildIconLabelRow(Icons.people, '4인분', Colors.grey),
@@ -53,18 +56,17 @@ class MyHomePage extends StatelessWidget {
     );
 
     Widget stepSection = Padding(
-      padding:EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(16.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             '조리 순서',
             style: TextStyle(
               fontSize: 20.0,
               fontWeight: FontWeight.bold,
             ),
           ),
-
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -76,8 +78,8 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                width: MediaQuery.of(context).size.width*0.5,
-                child: Text(
+                width: MediaQuery.of(context).size.width * 0.5,
+                child: const Text(
                   '[아스파라거스 토마토 구이] 아스파라거스는 4-5cm 길이로 자른다.',
                   style: TextStyle(fontSize: 16.0),
                 ),
@@ -106,40 +108,41 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Recipe Example'),
-          centerTitle: false,
-        ),
+        centerTitle: false,
+      ),
       body: ListView(
         children: [
           // recipe photo
-          Image.asset(
-            'assets/image01.jpg'
-          ),
+          Image.asset('assets/image01.jpg'),
           // recipe explain
           titleSection,
           iconSection,
           stepSection,
-          ],
-        ),
-      );
+        ],
+      ),
+    );
   }
 
-  Row buildIconLabelRow(IconData icon,String label, Color color,) {
+  Row buildIconLabelRow(
+    IconData icon,
+    String label,
+    Color color,
+  ) {
     return Row(
-        children: [
-          Icon(icon, color: color,),
-          Container(
-            margin: const EdgeInsets.only(left: 8.0),
-            child: Text(
-              label,
-              style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w400,
-              color: color
-                ),
-              ),
-            ),
-          ],
-        );
+      children: [
+        Icon(
+          icon,
+          color: color,
+        ),
+        Container(
+          margin: const EdgeInsets.only(left: 8.0),
+          child: Text(
+            label,
+            style: TextStyle(
+                fontSize: 16, fontWeight: FontWeight.w400, color: color),
+          ),
+        ),
+      ],
+    );
   }
 }
-
