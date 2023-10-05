@@ -6,7 +6,7 @@
 
 #### a. '개발이 재미있는 플러터 앱 프로그래밍'
 
-**[cgv_clone](https://github.com/BlingstarHamal/flutter_study2/blob/main/cgv_clone/README.mdhttps://) - firebase firestore database**
+**[cgv_clone](https://github.com/BlingstarHamal/flutter_study2/blob/main/cgv_clone/README.md) - firebase firestore database**
 
 **parking - google map 불러오기 진행 중 ( 중단 )**
 
@@ -24,7 +24,7 @@ widget_sample
 
 #### b. ' 초보자도 프로처럼 만드는 플러터 앱 개발'
 
-**[board_sample](https://github.com/BlingstarHamal/flutter_study2/tree/main/board_sample#readmehttps://) - firebase realtime database**
+**[board_sample](https://github.com/BlingstarHamal/flutter_study2/tree/main/board_sample/README.md) - firebase realtime database**
 
 regist_sample - 회원가입 폼
 
@@ -34,7 +34,7 @@ daily_cats_app
 
 #### c. 'Do it! 깡샘의 플러터& 다트 프로그래밍'
 
-**[regist_firebase_sample](https://github.com/BlingstarHamal/flutter_study2/blob/main/regist_firebase_sample/README.mdhttps://) - firebase authentication, 이메일 인증**
+**[regist_firebase_sample](https://github.com/BlingstarHamal/flutter_study2/blob/main/regist_firebase_sample/README.md) - firebase authentication, 이메일 인증**
 
 ---
 
@@ -50,7 +50,7 @@ daily_cats_app
 
 ## 2. Flutter 유튜브를 보고 진행한 것
 
-a. **[getx_board](https://github.com/BlingstarHamal/flutter_study2/blob/main/getx_board/README.mdhttps://) - getX를 이용하여 블로그앱 구현 / 회원가입, 로그인, 글쓰기,글수정,글삭제** - [메타코딩](https://www.youtube.com/playlist?list=PL93mKxaRDidESjm_xR9BEKj5VJQMXy0tM)
+a. **[getx_board](https://github.com/BlingstarHamal/flutter_study2/blob/main/getx_board/README.md) - getX를 이용하여 블로그앱 구현 / 회원가입, 로그인, 글쓰기,글수정,글삭제** - [메타코딩](https://www.youtube.com/playlist?list=PL93mKxaRDidESjm_xR9BEKj5VJQMXy0tM)
 
 ---
 
