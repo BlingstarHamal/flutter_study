@@ -1,16 +1,13 @@
 # cgv_clone
 
-A new Flutter project.
+![1696479192949.png](./1696479192949.png)
 
-## Getting Started
+![1696479329268.png](./1696479329268.png)
 
-This project is a starting point for a Flutter application.
+ ![1696479434027.png](./1696479434027.png)
 
-A few resources to get you started if this is your first Flutter project:
+ ![1696479388840.png](./1696479388840.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+ ![1696479403995.png](./1696479403995.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ ![1696479369378.png](./1696479369378.png)
