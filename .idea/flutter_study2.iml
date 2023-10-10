@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/regist_sample/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/regist_sample/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/regist_sample/build" />
+      <excludeFolder url="file://$MODULE_DIR$/recipe_sample/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/recipe_sample/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/recipe_sample/build" />
+      <excludeFolder url="file://$MODULE_DIR$/board_sample/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/board_sample/build" />
+      <excludeFolder url="file://$MODULE_DIR$/board_sample/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/twosome_example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/twosome_example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/twosome_example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Counter/build" />
+      <excludeFolder url="file://$MODULE_DIR$/Counter/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/Counter/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/counter_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/counter_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/counter_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/daily_cats_app/build" />
+      <excludeFolder url="file://$MODULE_DIR$/daily_cats_app/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/daily_cats_app/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/prov_login/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/prov_login/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/prov_login/build" />
+      <excludeFolder url="file://$MODULE_DIR$/auth_board/build" />
+      <excludeFolder url="file://$MODULE_DIR$/auth_board/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/auth_board/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/widget_sample/build" />
+      <excludeFolder url="file://$MODULE_DIR$/widget_sample/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/widget_sample/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/regist_firebase_sample/build" />
+      <excludeFolder url="file://$MODULE_DIR$/regist_firebase_sample/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/regist_firebase_sample/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/as_test/ios/.symlinks/plugins/fluttertoast/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/as_test/ios/.symlinks/plugins/fluttertoast/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/as_test/ios/.symlinks/plugins/fluttertoast/build" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_hive/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_hive/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/todo_hive/build" />
+      <excludeFolder url="file://$MODULE_DIR$/schedule_prov/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/schedule_prov/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/schedule_prov/build" />
+      <excludeFolder url="file://$MODULE_DIR$/cgv_clone/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/cgv_clone/build" />
+      <excludeFolder url="file://$MODULE_DIR$/cgv_clone/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/getx_board/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/getx_board/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/getx_board/build" />
+      <excludeFolder url="file://$MODULE_DIR$/login_test/build" />
+      <excludeFolder url="file://$MODULE_DIR$/login_test/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/login_test/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/as_test/build" />
+      <excludeFolder url="file://$MODULE_DIR$/as_test/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/as_test/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/as_test/ios/.symlinks/plugins/fluttertoast/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/as_test/ios/.symlinks/plugins/fluttertoast/example/build" />
+      <excludeFolder url="file://$MODULE_DIR$/as_test/ios/.symlinks/plugins/fluttertoast/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/schedule/build" />
+      <excludeFolder url="file://$MODULE_DIR$/schedule/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/schedule/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/parking/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/parking/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/parking/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
